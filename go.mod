@@ -1,4 +1,4 @@
-module golang.org/x/blog
+module github.com/polaris1119/blog
 
 go 1.11
 
