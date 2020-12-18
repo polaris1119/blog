@@ -15,7 +15,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"golang.org/x/blog/content/context/userip"
+	"github.com/polaris1119/blog/content/context/userip"
 )
 
 // Results is an ordered list of search results.
