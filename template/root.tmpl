@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:600|Roboto:400,700|Source+Code+Pro">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans&text=Supported%20by%20Google&display=swap">
 <link rel="stylesheet" href="/lib/godoc/style.css">
-<link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="/blog/fonts.css">
 <link rel="alternate" type="application/atom+xml" title="docs.studygolang.com/blog - Atom Feed" href="https://docs.studygolang.com/blog/feed.atom" />
 <script>window.initFuncs = [];</script>
 <style>
@@ -101,7 +101,7 @@
         <li class="Header-menuItem"><a href="/pkg/">Packages</a></li>
         <li class="Header-menuItem"><a href="/project/">The Project</a></li>
         <li class="Header-menuItem"><a href="/help/">Help</a></li>
-        <li class="Header-menuItem"><a href="/blog">Blog</a></li>
+        <li class="Header-menuItem"><a href="/blog/">Blog</a></li>
         <li class="Header-menuItem"><a href="https://play.studygolang.com/">Play</a></li>
         <li class="Header-menuItem Header-menuItem--search">
           <form class="HeaderSearch" role="search" action="/search">
@@ -149,11 +149,11 @@
           <li><a href='//twitter.com/golang'>Go on Twitter</a></li>
         </ul>
 
-        <p><a href="/index">Blog index</a></p>
+        <p><a href="/blog/index">Blog index</a></p>
       </aside><!-- #sidebar -->
 
       <div id="content">
-        <h1><a href="/blog">The Go Blog</a></h1>
+        <h1><a href="/blog/">The Go Blog</a></h1>
         {{template "content" .}}
       </div><!-- #content -->
 
@@ -209,8 +209,8 @@
 {{end}}
 
 {{define "doc"}}
-  <div class="article" data-slug="{{.Path}}">
-    <h2 class="title"><a href="{{.Path}}">{{.Title}}</a></h2>
+  <div class="article" data-slug="/blog/{{.Path}}">
+    <h2 class="title"><a href="/blog/{{.Path}}">{{.Title}}</a></h2>
     <p class="author">
     {{with .Authors}}{{authors .}}<br>{{end}}
     {{.Time.Format "2 January 2006"}}
